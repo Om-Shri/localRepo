@@ -1,5 +1,15 @@
-print("hello world")
-'''
-Hello i am hear.
+#7 pdf merger in same folder.
 
-'''
+from pypdf import PdfWriter
+import os
+
+merge = PdfWriter()
+
+
+files = [pdf for pdf in os.listdir() if pdf.endswith(".pdf")]
+
+for pdf in files:
+    merge.append(files)
+
+merge.write("Mergedpdf.pdf")
+merge.close()
