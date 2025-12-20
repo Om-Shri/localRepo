@@ -2,14 +2,14 @@
 ##  WINDOWS SYSTEM.
 import time
 from plyer import notification
-a = input("Enter hours for notification (1,2,3,4...) :")
+sedule = input("Enter hours for notification (1,2,3,4...) :")
 
-sedule = int(a)*3600
+hours = int(sedule)*3600
 
 while True:
     notification.notify(
         title="Reminder",
         message="Drink one glass of water.You are dehydrated.",
     )
-    time.sleep(sedule)
+    time.sleep(hours)
 
