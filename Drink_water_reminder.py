@@ -11,7 +11,6 @@ while True:
         title="Reminder",
         message="Drink one glass of water.You are dehydrated.",
     )
-    time.sleep(hours)
-    # for i in range(hours):
-    #     print(i)
-    #     time.sleep(1)
+    for i in range(hours,-1,-1):
+        print(f"Remaining seconds = {i}")
+        time.sleep(1)
